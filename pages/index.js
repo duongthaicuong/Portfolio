@@ -1,50 +1,52 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Layouts/Navbar';
-import MainBanner from '../components/HomePages/DefaultHome/MainBanner';
-import Services from '../components/HomePages/DefaultHome/Services';
-import About from '../components/HomePages/DefaultHome/About';
-import OurWorks from '../components/HomePages/DefaultHome/OurWorks';
-import WorkProcess from '../components/HomePages/DefaultHome/WorkProcess';
+import NavbarTwo from '../components/Layouts/NavbarTwo';
+import MainBanner from '../components/HomePages/ItAgency/MainBanner';
+import OurServices from '../components/HomePages/ItAgency/OurServices';
+import ServiceStyleTwo from '../components/HomePages/ItAgency/ServiceStyleTwo';
+import WhyChooseUs from '../components/HomePages/ItAgency/WhyChooseUs';
+import FunFactsTwo from '../components/Common/FunFactsTwo';
 import Feedback from '../components/Common/Feedback';
-import Team from '../components/Common/Team';
-import FunFacts from '../components/Common/FunFacts';
-import LatestNewsSlider from '../components/Common/LatestNewsSlider';
-import CtaArea from '../components/Common/CtaArea';
-import Partner from '../components/Common/Partner';
+import PricingStyleThree from '../components/Pricing/PricingStyleThree';
+import TeamStyleTwo from '../components/Common/TeamStyleTwo';
+import LatestNewsSliderTwo from '../components/Common/LatestNewsSliderTwo';
+import Newsletter from '../components/Common/Newsletter';
 import Footer from '../components/Layouts/Footer';
+import Partner from '../components/Common/Partner';
 
-class Index extends Component {
+class index extends Component {
     render() {
         return (
             <>
-                <Navbar />
+                <NavbarTwo />
+                
+                <MainBanner /> 
 
-                <MainBanner />
+                <OurServices />
 
-                <Services />
+                <ServiceStyleTwo />
 
-                <About />
+                <WhyChooseUs />
 
-                <OurWorks />
+                <FunFactsTwo />
 
-                <WorkProcess />
+                <Partner />
 
                 <Feedback />
 
-                <Team />
+                <TeamStyleTwo />
 
-                <FunFacts />
-
-                <LatestNewsSlider />
-
-                <CtaArea />
-
-                <Partner />
+                <PricingStyleThree /> 
                 
+                <LatestNewsSliderTwo />
+
+                <div className="pb-100">
+                    <Newsletter />
+                </div>
+
                 <Footer />
             </>
         );
     }
 }
 
-export default Index;
+export default index;
