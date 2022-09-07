@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import NavbarTwo from '../components/Layouts/NavbarTwo';
 import MainBanner from '../components/HomePages/ItAgency/MainBanner';
 import OurServices from '../components/HomePages/ItAgency/OurServices';
@@ -13,40 +12,36 @@ import Newsletter from '../components/Common/Newsletter';
 import Footer from '../components/Layouts/Footer';
 import Partner from '../components/Common/Partner';
 
-class index extends Component {
-    render() {
-        return (
-            <>
-                <NavbarTwo />
-                
-                <MainBanner /> 
+export default function HomePage() {
+    return(
+        <>
+            <NavbarTwo />
+            
+            <MainBanner /> 
 
-                <OurServices />
+            <OurServices />
 
-                <ServiceStyleTwo />
+            <ServiceStyleTwo />
 
-                <WhyChooseUs />
+            <WhyChooseUs />
 
-                <FunFactsTwo />
+            <FunFactsTwo />
 
-                <Partner />
+            <Partner />
 
-                <Feedback />
+            <Feedback />
 
-                <TeamStyleTwo />
+            <TeamStyleTwo />
 
-                <PricingStyleThree /> 
-                
-                <LatestNewsSliderTwo />
+            <PricingStyleThree /> 
+            
+            <LatestNewsSliderTwo />
 
-                <div className="pb-100">
-                    <Newsletter />
-                </div>
+            <div className="pb-100">
+                <Newsletter />
+            </div>
 
-                <Footer />
-            </>
-        );
-    }
+            <Footer />
+        </>
+    )
 }
-
-export default index;
